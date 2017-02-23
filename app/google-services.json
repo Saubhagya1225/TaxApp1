@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1002663183388",
+    "project_id": "firebase-taxapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002663183388:android:bbca5dc6c9532572",
+        "android_client_info": {
+          "package_name": "com.taxwardo.taxapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002663183388-n55tn8m2okcvluv3qslrl7prcjbub2ns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taxwardo.taxapp",
+            "certificate_hash": "8930acecf67fcc9fcb8f94f8e820240b99b12412"
+          }
+        },
+        {
+          "client_id": "1002663183388-oecjlb4j5k1pf060l8g0u2t38oopskh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaDX51FqHqS6DRW4WO81b1mSqfErOM66A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

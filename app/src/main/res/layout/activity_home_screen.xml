@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taxwardo.taxapp.HomeScreen">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_tax_callculator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tax Calculator"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_hra_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HRA calculator"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_advanced_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Advanced Tax Calculator"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_tax_saving_calculator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tax Saving calculator"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="10dp">
+            <TextView
+                android:id="@+id/tv_medical_benifit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mediclaim benefit calculator"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_medical_benefit_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taxwardo.taxapp.medicalBenefitCalculator.MedicalBenefitCalculator">
+<include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_hra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cardViewMargin"
+                    app:contentPadding="@dimen/contentPadding">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Insurence"
+                            android:textColor="@color/colorIndigo"
+                            android:textSize="@dimen/introDuctString"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select financial year"
+                                android:textSize="16sp"/>
+                            <Spinner
+                                android:id="@+id/spiner_finacial_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp">
+
+                            </Spinner>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Self/ dependent details"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age"
+                            android:textSize="@dimen/textSize"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                        <Spinner
+                            android:id="@+id/spinner_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                        </Spinner>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Health insurance premium"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            >
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Preventive health checkup expenditure "/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Parent's detail "
+                            android:textSize="@dimen/introDuctString"
+                            android:textColor="@color/colorIndigo"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age"
+                            android:textSize="@dimen/textSize"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                        <Spinner
+                            android:id="@+id/spinner_age_parent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                        </Spinner>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <EditText
+                                android:id="@+id/et_parent_health_insurence"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Health insurance premium"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            >
+                            <EditText
+                                android:id="@+id/et_parent_healthckup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Preventive health checkup expenditure "/>
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
+
+

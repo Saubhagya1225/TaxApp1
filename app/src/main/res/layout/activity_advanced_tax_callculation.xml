@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_advanced_tax_callculation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taxwardo.taxapp.advancedTaxCallculation.AdvancedTaxCallculation">
+
+    <include layout="@layout/toolbar"/>
+    <ScrollView
+        android:id="@+id/scroll_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_adv_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cardViewMargin"
+                    app:contentPadding="@dimen/contentPadding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:text="BASIC DETAILS"
+                            android:textColor="@color/colorIndigo"
+                            android:textSize="@dimen/introDuctString"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <TextView
+                                android:id="@+id/tv_age"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Age"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                            <Spinner
+                                android:id="@+id/sp_age"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_financial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Financial Year"
+                                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+                            <Spinner
+                                android:id="@+id/sp_financial"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_residential"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Residential Status" />
+
+                            <Spinner
+                                android:id="@+id/sp_residential"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            >
+
+                            <EditText
+                                android:id="@+id/et_taxable_income"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Taxable income as per projected form 16 " />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <EditText
+                                android:id="@+id/et_tds_salary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="TDS (Salary)" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cardViewMargin"
+                    app:contentPadding="@dimen/contentPadding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Other"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="OTHER INCOME"
+                            android:textColor="@color/colorIndigo"
+                            android:textSize="@dimen/introDuctString"
+                            android:textStyle="bold" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_RentIncome"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Rent income  " />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_OtherIncome"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Income from other sources " />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_SplRate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Income chargeble under Special Tax Rate, Enter Rate" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_SplAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Special Rate Amount" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_simpl_Rate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Simple Rate" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_SimpleAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Simple Amount" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_adv_Third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/cardViewMargin"
+                    app:contentPadding="@dimen/contentPadding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_Capital_Gain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CAPITAL GAIN"
+                            android:textColor="@color/colorIndigo"
+                            android:textSize="@dimen/introDuctString"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin"
+                            >
+
+                            <EditText
+                                android:id="@+id/et_Capital_Gain_Income"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Enter Your Capital Gain Income" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_long_Gain_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Long term gain w/o indexation @ 10 %" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_long_Gain_20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Long term gain with indexation @ 20 %" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_short_Gain_Stt_15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Short term gain STT paid @ 15 %" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_Gain_Slab_Rate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Short term gain as per slab rate" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                            <EditText
+                                android:id="@+id/et_Tds_Other"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="TDS on income other than salary" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="SAVE"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

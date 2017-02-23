@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TaxApp</string>
+
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+    <string name="start">GOT IT</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+</resources>
